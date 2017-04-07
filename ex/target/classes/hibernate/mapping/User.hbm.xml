@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibrnate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibrnate-mapping>
+	<class table="User" lazy="false" name="FirstHibernate/tn/ex/CRUDS/User">
+		<id column="idUser" type="int" name="idUser">
+			<generator class="increment" />
+		</id>
+
+		<property name="nameUser" type="string" column="NAME_USER" />
+		<property name="surnameUser" type="string" column="SURNAME_USER" />
+
+	</class>
+
+</hibrnate-mapping>
